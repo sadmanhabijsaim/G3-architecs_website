@@ -110,11 +110,34 @@ main > section{
     margin-top: 24px;
     margin-bottom: 32px;
 }
-
-
+.fst-h3{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #131313;
+}
+.p-text-color{
+    color: #727272;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link{
+    .navbar, .nav-link, .teams{
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 25px;
+    }
+}
+
+
+/* midiam level devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
     }
 }
